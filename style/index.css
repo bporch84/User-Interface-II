@@ -5,25 +5,28 @@ html {
 }
 
 body {
+    font-family: 'Heebo', sans-serif;
     font-size: 1.6rem;
     text-align: center;
 }
 
 /* Header */
 header {
-    border: 1px red solid;
-    height: 49vh;
+    height: 50vh;
 }
 
 h1 {
-    font-size: 9rem;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 12rem;
     text-transform: capitalize;
-    margin: 3.5rem;
+    margin: 2rem 0;
 }
 
 h2 {
-    font-size: 6.5rem;
-    margin: 3.5rem;
+   font-family: 'Reenie Beanie', cursive;
+    font-size: 8.5rem;
+    margin: 4rem 0;
+    text-transform: capitalize;
 }
 
 /* Nav */
@@ -33,21 +36,98 @@ nav ul {
 }
 
 nav ul li {
-    border: .2rem black solid; /* Individually do borders with nth child? */
-    padding: 2.2rem 3.9rem;
-}
-
-
-ul {
     list-style-type: none;
 }
 
-a {
+nav ul li a {
+    display: block;
+    padding: 25px 70px;
     text-decoration: none;
     text-transform: uppercase;
     color: black;
-    font-weight: bolder;
+    transition-duration: 0.4s;
+   }
+
+nav ul li a:hover {
+    border: 1px black solid;
+    background-color: white;
+    color: black;
+  }
+
+nav ul li:nth-child(1) {
+    background-color: orange;
+   }
+nav ul li:nth-child(2) {
+    background-color:green;
+   }
+nav ul li:nth-child(3) {
+    background-color: indigo;
+   }
+nav ul li:nth-child(4) {
+    background-color: red;
+   }
+
+span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+a:hover span {
+    padding-right: 25px;
+  }
+  
+a:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+.header-text {
+    width: 80%;
+    margin: auto;
+    font-style: oblique;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Main */
 main img{
