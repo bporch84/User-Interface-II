@@ -1,5 +1,9 @@
 /* Add CSS styling here */
 
+* {
+  box-sizing: border-box;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -208,4 +212,91 @@ footer nav {
   width:50%;
   margin: auto;
   padding: 1.5rem;
+}
+
+@media only screen and (max-width: 800px) {
+  header {
+    height: 60vh;
+  }
+
+  h1 {
+    left: 37vw;
+  }
+
+  @keyframes h1 {
+    from {left: -100vw;}
+    to {left: 37vw;}
+  }
+
+  header nav ul {
+    flex-direction: column;
+    width: 35%;
+    margin: auto;
+}
+
+  header nav ul li a {
+    padding: 25px ;
+ }
+
+ main img {
+    height: auto;
+ }
+
+ .gallery {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 25px 0;
+}
+
+.gallery div {
+  width: 50%;
+  padding: 25px 0;
+}
+
+.gallery div:nth-child(5){
+  text-align: center;
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+footer nav {
+  width: 100%;
+}
+
+.social-media {
+  width:75%;
+}
+}
+
+@media only screen and (max-width: 500px) {
+  header {
+    height: 50vh;
+  }
+
+  h1 {
+    font-size: 7.5rem;
+    left: 37vw;
+  }
+
+  @keyframes h1 {
+    from {left: -100vw;}
+    to {left: 37vw;}
+  }
+
+  header nav ul li a {
+    padding: 15px;
+ }
+
+ h2 {
+   font-size: 5.5rem;
+ }
+
+footer {
+  width: 100%;
+  margin: auto;
+}
+
+footer nav {
+  width: 90%;
+}
 }

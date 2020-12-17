@@ -1,5 +1,8 @@
 /* Add CSS styling here */
 
+* {
+  box-sizing: border-box;
+}
 html {
     font-size: 62.5%;
 }
@@ -29,8 +32,8 @@ h1 {
 }
 
 @keyframes h1 {
-  from {left: -70vw;}
-  to {left: 44.3vw;}
+  from {left: -70%;}
+  to {left: 44.3%;}
 }
 
 h2 {
@@ -83,7 +86,7 @@ header nav ul li:nth-child(2) {
     background-color:green;
    }
 header nav ul li:nth-child(3) {
-    background-color: indigo;
+    background-color: purple;
    }
 header nav ul li:nth-child(4) {
     background-color: red;
@@ -170,6 +173,7 @@ main img{
 .container {
   display: flex;
   width: 90vw;
+  margin: auto;
 }
 
 .panel {
@@ -217,12 +221,14 @@ footer nav ul li {
 }
 
 footer nav {
-  width: 80%;
+  width: 50%;
+  margin: auto;
 }
 
 .contact-me {
   width: 150px;
   margin: auto;
+  padding: 25px 0;;
 }
 
 .contact-me a{
@@ -235,7 +241,7 @@ footer nav {
  }
 
  .contact-me a:hover{
-   border: 3px solid #FF1CAE;
+  border: 3px solid #FF1CAE;
   background-color: white;
   color: #FF1CAE;  
  }
@@ -243,7 +249,13 @@ footer nav {
 .social-media {
   display: flex;
   justify-content: space-between;
-  width:50%;
   margin: auto;
-  padding: 5rem;
+}
+
+@media only screen and (max-width: 800px) {
+
+}
+
+@media only screen and (max-width: 500px) {
+
 }
